@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0%;
+}
+@import './variables/extend.scss';
+@import './variables/tipografa';
+@import './secciones/header.scss';
+@import './secciones/index.scss';
+@import './secciones/alimento.scss';
+@import './secciones/accesorios.scss';
+@import './secciones/estetica.scss';
+@import './secciones/contacto.scss';

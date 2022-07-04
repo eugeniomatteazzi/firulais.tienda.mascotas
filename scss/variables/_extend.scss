@@ -1,0 +1,12 @@
+
+%seccionesMenu{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    align-items: center;
+}
+@mixin menuenlinea ($letraMenu, $tipoLetra, $colorTipografia) {
+    font-size: $letraMenu;
+    font-family: $tipoLetra;
+    color: $colorTipografia;
+}

@@ -1,0 +1,33 @@
+#header .grid {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+}
+
+.logo {
+    max-width: 400px;
+}
+
+
+
+
+
+ul {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @include menuenlinea($letraMenu, $tipoLetra, $colorTipografia);
+
+    li {
+        @extend %seccionesMenu
+    }
+}
+
+
+.gradient {
+    background: linear-gradient(90deg, rgba(0, 0, 36, 0.011642156862745057) 8%, rgba(212, 23, 221, 1) 49%, rgba(209, 72, 197, 0.23853291316526615) 86%);
+}
