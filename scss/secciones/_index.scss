@@ -1,40 +1,15 @@
-#index .articulo {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    p {
-        color: black;
-        font-size: 8mm;
-        font-family: Georgia;
-    }
+#index
+.main{
+    background: linear-gradient(90deg, rgba(0, 0, 36, 0.0116422) 8%, #d417dd 49%, rgba(209, 72, 197, 0.238533) 86%);
+ p{
+    color: black;
+    font-size: 8mm;
+    font-family: Georgia;
+ }
 }
-
-.footer {
-    grid-area: footer;
-
-
-    ul {
-        font-size: 5mm;
-        font-family: Georgia;
-        font-style: normal;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .instagram {
-        max-width: 25px;
-    }
-
-    .facebook {
-        max-width: 65px;
-    }
-
-    .whatsupp {
-        max-width: 25px;
-    }
-
-
+.footer{
+    background: linear-gradient(90deg, rgba(0, 0, 36, 0.0116422) 8%, #d417dd 49%, rgba(209, 72, 197, 0.238533) 86%); 
+.ubicacion{
+    max-width: 400px;
+}
 }
