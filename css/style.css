@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0%; }
@@ -22,9 +23,16 @@
     color: black;
     font-size: 8mm;
     font-family: Georgia; }
+  #index
+.main .tamaño {
+    max-width: 150vh;
+    margin: auto;
+    border-style: double;
+    border-color: black; }
 
 .footer {
   background: linear-gradient(90deg, rgba(0, 0, 36, 0.0116422) 8%, #d417dd 49%, rgba(209, 72, 197, 0.238533) 86%); }
   .footer .ubicacion {
-    border-style: double black;
-    max-width: 400px; }
+    margin: auto;
+    padding: 2%;
+    max-width: 300px; }
