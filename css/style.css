@@ -36,3 +36,8 @@
     margin: auto;
     padding: 2%;
     max-width: 300px; }
+  .footer li {
+    list-style: none;
+    color: black;
+    font-size: 5mm;
+    margin: auto; }

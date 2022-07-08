@@ -16,8 +16,14 @@
 .footer{
     background: linear-gradient(90deg, rgba(0, 0, 36, 0.0116422) 8%, #d417dd 49%, rgba(209, 72, 197, 0.238533) 86%); 
 .ubicacion{
-    margin: auto;
+margin: auto;
     padding: 2%;
     max-width: 300px;
+}
+li{
+    list-style: none;
+    color: black;
+    font-size: 5mm;
+    margin: auto;
 }
 }
