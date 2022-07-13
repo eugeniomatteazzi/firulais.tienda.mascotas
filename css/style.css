@@ -16,10 +16,12 @@
   .header img {
     max-width: 400px; }
   .header nav {
+    padding: 0%;
     border-radius: 2mm;
     border-style: double;
     color: black; }
   .header a {
+    padding: 0%;
     text-decoration: none;
     color: black;
     font-style: oblique; }
@@ -46,6 +48,11 @@
 .main p .local {
       height: 600px;
       margin: auto; }
+    #index
+.main p hr {
+      margin: 0%;
+      size: 5mm;
+      color: black; }
   #index
 .main .tamaño {
     max-width: 150vh;
