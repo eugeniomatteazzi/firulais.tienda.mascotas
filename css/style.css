@@ -15,10 +15,14 @@
     justify-content: space-between; }
   .header img {
     max-width: 400px; }
+  .header a {
+    text-decoration: none;
+    color: black;
+    font-style: oblique; }
   .header li {
     padding: 0%;
-    color: black;
     text-decoration: none;
+    color: black;
     list-style: none;
     font-family: Arial;
     font-size: 5mm; }
@@ -26,14 +30,13 @@
 #index
 .main {
   min-height: 800px;
-  background: linear-gradient(90deg, rgba(0, 0, 36, 0.0116422) 8%, #d417dd 49%, rgba(209, 72, 197, 0.238533) 86%);
-  background-image: url("https://petindustry.co/wp-content/uploads/2022/02/PETSHOP-TENDENCIAS-PETINDUSTRY1.jpeg"); }
+  background: linear-gradient(90deg, rgba(0, 0, 36, 0.0116422) 8%, #d417dd 49%, rgba(209, 72, 197, 0.238533) 86%); }
   #index
 .main p {
-    margin-top: 10%;
-    padding: 10%;
+    margin-top: 0%;
+    padding: 5%;
     color: black;
-    font-size: 10mm;
+    font-size: 7mm;
     font-family: Georgia; }
   #index
 .main .tamaño {
@@ -52,8 +55,9 @@
     list-style: none;
     color: black;
     font-size: 5mm;
-    margin: auto; }
+    margin: auto;
+    text-decoration: none; }
   .footer .logoredes {
-    max-width: 50px; }
+    max-width: 40px; }
   .footer .tarjetas {
     max-width: 150px; }
