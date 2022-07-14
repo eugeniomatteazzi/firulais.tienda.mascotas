@@ -14,38 +14,46 @@
 <body id="index" class="container-fluid">
     <!-- Encabezado - Logo Nombre Principal -->
     <header class="container-fluid header">
-        <div class="conteiner-fluid logocarrucel">
-            <a class="row" href="./index.html">
+
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
                 <img src="./logo firulais img/IMG-4002.PNG" alt="logo">
-            </a>
-            <div id="carouselExampleSlidesOnly" class="carousel slide row carrucelheader" data-bs-ride="carousel">
-                <div class="carousel-inner ">
-                    <div class="carousel-item active">
-                        <img src="https://pbs.twimg.com/media/D2RziP4W0AA8NH_.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://cancat.com.ar/news/2020/0820/images/cancat-0820b_central.png"
-                            class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://http2.mlstatic.com/D_NQ_NP_647596-MLA50009806569_052022-V.jpg"
-                            class="d-block w-100" alt="...">
-                    </div>
-                </div>
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="alimentos.html">Alimentos</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      PetShop
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="accesorios.html">Accesorios</a></li>
+                      <li><a class="dropdown-item" href="estetica.html">Estetica</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
             </div>
-        </div>
-        <nav class="row justify-content-center">
-            <!-- Secciones - Lista No Ordenada -->
-            <ul class="row justify-content-center">
-                <li class="col-2 align-self-center"><a href="./index.html">Inicio</a></li>
-                <li class="col-2 align-self-center"><a href="./alimentos.html">Alimentos</a>
-                </li>
-                <li class="col-2 align-self-center"><a href="./accesorios.html">Accesorios</a></li>
-                <li class="col-2 align-self-center"><a href="./estetica.html">Estetica</a></li>
-                <!-- Ruta Relatica - index-contacto -->
-                <li class="col-2 align-self-center"><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+          </nav>
+        
     </header>
     <main class="container-fluid main ">
         <section class="row justify-content-center">

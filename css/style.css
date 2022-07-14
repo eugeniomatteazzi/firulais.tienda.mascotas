@@ -8,18 +8,41 @@
   .header .carrucelheader {
     padding: 5%;
     max-width: 550px; }
+  .header .buscar {
+    font-size: 5mm;
+    font-family: Georgia;
+    font-style: oblique;
+    outline: none;
+    box-sizing: border-box;
+    height: 30px;
+    width: 200px;
+    padding: 0%;
+    border-radius: 3mm;
+    margin: auto;
+    margin-right: 0%;
+    border-color: darkmagenta;
+    border-style: groove; }
+  .header .btn {
+    outline: none;
+    box-sizing: border-box;
+    height: 30px;
+    width: 50px;
+    padding: 0%;
+    border-radius: 3mm;
+    margin: auto;
+    margin-left: 0%;
+    background-color: white;
+    border-color: darkmagenta;
+    border-style: groove; }
   .header .logocarrucel {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between; }
   .header img {
-    max-width: 400px; }
+    max-width: 200px; }
   .header nav {
-    padding: 0%;
-    border-radius: 2mm;
-    border-style: double;
-    color: black; }
+    background: linear-gradient(90deg, rgba(0, 0, 36, 0.0116422) 8%, #d417dd 49%, rgba(209, 72, 197, 0.238533) 86%); }
   .header a {
     padding: 0%;
     text-decoration: none;
