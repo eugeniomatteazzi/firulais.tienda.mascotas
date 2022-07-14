@@ -1,69 +1,35 @@
 .header{
     background: linear-gradient(90deg, rgba(0,0,36,0.011642156862745057) 8%, rgba(212,23,221,1) 49%, rgba(209,72,197,0.23853291316526615) 86%);
-.carrucelheader{
-    padding: 5%
-    ;
-    max-width: 550px;
+
     
-}
-.buscar{
-    font-size: 5mm;
-    font-family: Georgia;
-    font-style: oblique;
-    outline: none;
-    box-sizing: border-box;
-    height: 30px;
-    width: 200px;
-    padding: 0%;
-    border-radius: 3mm;
-    margin: auto;
-    margin-right: 0%;
-    border-color: darkmagenta;
-    border-style: groove;
 
-}
-.btn{
-    outline: none;
-    box-sizing: border-box;
-    height: 30px;
-    width: 50px;
-    padding: 0%;
-    border-radius: 3mm;
-    margin: auto;
-margin-left: 0%;
-   
-    background-color: white;
-    border-color: darkmagenta;
-    border-style: groove;
-}
 
-.logocarrucel{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
+
+
     img{
     max-width: 200px;
 }
 nav{
     
     background: linear-gradient(90deg, rgba(0,0,36,0.011642156862745057) 8%, rgba(212,23,221,1) 49%, rgba(209,72,197,0.23853291316526615) 86%);
-  
-}
-a{
-    padding: 0%;
-    text-decoration: none;
+    button{
+        background-color: darkmagenta;
+       color: white;
+    } 
+    
+    li{
     color: black;
+    font-size: 5mm;
     font-style: oblique;
+    font-family: helvetica;
+    a{
+        color: black;
+        font-size: 5mm;
+        font-family: helvetica;
+        font-style: oblique;
+    }
+  }
 }
 
-li{
-    padding: 0%;
-    text-decoration: none;
-    color: black;
-    list-style: none;
-    font-family: Arial;
-    font-size: 5mm;
 }
-}
+

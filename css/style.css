@@ -1,64 +1,32 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0%; }
 
 .header {
   background: linear-gradient(90deg, rgba(0, 0, 36, 0.0116422) 8%, #d417dd 49%, rgba(209, 72, 197, 0.238533) 86%); }
-  .header .carrucelheader {
-    padding: 5%;
-    max-width: 550px; }
-  .header .buscar {
-    font-size: 5mm;
-    font-family: Georgia;
-    font-style: oblique;
-    outline: none;
-    box-sizing: border-box;
-    height: 30px;
-    width: 200px;
-    padding: 0%;
-    border-radius: 3mm;
-    margin: auto;
-    margin-right: 0%;
-    border-color: darkmagenta;
-    border-style: groove; }
-  .header .btn {
-    outline: none;
-    box-sizing: border-box;
-    height: 30px;
-    width: 50px;
-    padding: 0%;
-    border-radius: 3mm;
-    margin: auto;
-    margin-left: 0%;
-    background-color: white;
-    border-color: darkmagenta;
-    border-style: groove; }
-  .header .logocarrucel {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between; }
   .header img {
     max-width: 200px; }
   .header nav {
     background: linear-gradient(90deg, rgba(0, 0, 36, 0.0116422) 8%, #d417dd 49%, rgba(209, 72, 197, 0.238533) 86%); }
-  .header a {
-    padding: 0%;
-    text-decoration: none;
-    color: black;
-    font-style: oblique; }
-  .header li {
-    padding: 0%;
-    text-decoration: none;
-    color: black;
-    list-style: none;
-    font-family: Arial;
-    font-size: 5mm; }
+    .header nav button {
+      background-color: darkmagenta;
+      color: white; }
+    .header nav li {
+      color: black;
+      font-size: 5mm;
+      font-style: oblique;
+      font-family: helvetica; }
+      .header nav li a {
+        color: black;
+        font-size: 5mm;
+        font-family: helvetica;
+        font-style: oblique; }
 
 #index
 .main {
-  min-height: 800px;
+  background-repeat: none;
+  min-height: auto;
+  min-width: auto;
   background: linear-gradient(90deg, rgba(0, 0, 36, 0.0116422) 8%, #d417dd 49%, rgba(209, 72, 197, 0.238533) 86%); }
   #index
 .main p {
@@ -69,19 +37,23 @@
     font-family: Georgia; }
     #index
 .main p .local {
-      height: 600px;
+      max-height: 600px;
       margin: auto; }
-    #index
-.main p hr {
-      margin: 0%;
-      size: 5mm;
-      color: black; }
   #index
-.main .tamaño {
-    max-width: 150vh;
+.main .carrucel {
     margin: auto;
-    border-style: double;
-    border-color: black; }
+    margin-bottom: 10px;
+    width: 1000px;
+    max-height: 400px; }
+    #index
+.main .carrucel .imgcarrucel {
+      max-width: 800px;
+      max-height: 400px; }
+  #index
+.main hr {
+    margin: 0%;
+    size: 5mm;
+    color: black; }
 
 .footer {
   background: linear-gradient(90deg, rgba(0, 0, 36, 0.0116422) 8%, #d417dd 49%, rgba(209, 72, 197, 0.238533) 86%); }

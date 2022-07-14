@@ -1,8 +1,11 @@
 #index
 
 .main{
-    min-height: 800px;
+    background-repeat: none;
+    min-height: auto;
+    min-width: auto;
     background: linear-gradient(90deg, rgba(0, 0, 36, 0.0116422) 8%, #d417dd 49%, rgba(209, 72, 197, 0.238533) 86%);
+    // background-image: url("../logo-redes/D7C2243D-382C-461C-9572-5F1201D3BE42\ \(2\).PNG");
 
 
     p{
@@ -12,24 +15,31 @@
     font-size:7mm;
     font-family: Georgia;
 .local{
-    height: 600px;
+    max-height: 600px;
     margin: auto;
     
+}
+}
+.carrucel{
+    margin: auto;
+   margin-bottom: 10px;
+  width: 1000px;
+  max-height: 400px;
+.imgcarrucel{
+    max-width: 800px;
+    max-height: 400px;
+}
 }
 hr{
     margin: 0%;
 size: 5mm;
     color: black;
 }
- }
  
- .tamaño {
-    max-width: 150vh;
-    margin: auto;
-    border-style: double;
-    border-color: black;
+ 
+ 
  }
-}
+
 .footer{
     background: linear-gradient(90deg, rgba(0, 0, 36, 0.0116422) 8%, #d417dd 49%, rgba(209, 72, 197, 0.238533) 86%); 
 .ubicacion{
