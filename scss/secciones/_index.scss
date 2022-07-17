@@ -20,15 +20,26 @@
     
 }
 }
+h2{
+    background-color: darkviolet;
+    color: white;
+    font-size: 10mm;
+    font-family: georgia;
+    font-style: oblique;
+}
 .carrucel{
-    margin: auto;
-   margin-bottom: 10px;
-  width: 1000px;
+//     margin: auto;
+//    margin-bottom: 10px;
+  width: 500px;
   max-height: 400px;
 .imgcarrucel{
     max-width: 800px;
     max-height: 400px;
 }
+}
+.destacados{
+    
+background-color: none;
 }
 hr{
     margin: 0%;

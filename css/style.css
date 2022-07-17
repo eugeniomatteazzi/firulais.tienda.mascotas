@@ -40,15 +40,23 @@
       max-height: 600px;
       margin: auto; }
   #index
+.main h2 {
+    background-color: darkviolet;
+    color: white;
+    font-size: 10mm;
+    font-family: georgia;
+    font-style: oblique; }
+  #index
 .main .carrucel {
-    margin: auto;
-    margin-bottom: 10px;
-    width: 1000px;
+    width: 500px;
     max-height: 400px; }
     #index
 .main .carrucel .imgcarrucel {
       max-width: 800px;
       max-height: 400px; }
+  #index
+.main .destacados {
+    background-color: none; }
   #index
 .main hr {
     margin: 0%;
