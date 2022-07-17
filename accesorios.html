@@ -5,65 +5,163 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <title>Accesorios</title>
 </head>
 
-<body class="gridaccesorio">
-    <header class="header">
-        <a  href="./index.html">
-            <img class="logogrid" src="./logo-firulais-img/IMG-4002.PNG" alt="Logo">
-        </a>
-
-        <nav>
-            <!-- Secciones - Lista No Ordenada -->
-            <ul class="menuenlinea">
-
-                <li class="lif"><a href="./index.html">Inicio</a></li>
-                <li class="lif"><a href="./alimentos.html">Alimentos</a>
-                </li>
-                <li class="lif"><a href="./accesorios.html">Accesorios</a>
-                </li>
-                <li class="lif"><a href="./estetica.html">Estetica</a></li>
-                <li class="lif"><a href="./contacto.html">Contacto</a>
-                </li>
-            </ul>
+<body id="accesorios" class="gridaccesorio">
+    <header class="headergrid">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./logo firulais img/IMG-4002.PNG" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="alimentos.html">Alimentos</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                PetShop
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="accesorios.html">Accesorios</a></li>
+                                <li><a class="dropdown-item" href="estetica.html">Estetica</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
         </nav>
     </header>
     <!-- Marcas Accesorios - Lista No Ordenada -->
-    <main class="main">
-        <p class="seleccionalimentos">Nuestra Seleccíon de Marcas</p>
-        <ul class="imagenes">
-            <li class="puntos">
-                <img src="https://animalsveterinaria.vteximg.com.br/arquivos/ids/161064/banner_550x440_juguetes.jpg?v=637651905147800000"
-                    alt="animals logo">
-            </li>
-            <li class="puntos">
-                <img src="https://www.per-ros.com/images/logo-negro-p.png" alt="perros logo">
-            </li>
-            <li class="puntos">
-                <img src="https://www.tiendanova.com.ar/SITES/IMG/veteriana-sabuesos-05-2020/11-09-2020-09-09-31-gigwi_200x200.png"
-                    alt="logo gigwi">
-            </li>
-            <li class="puntos">
-                <img src="https://littlepawshuellitas.com/wp-content/uploads/2018/05/Kong-logo.png" alt="logo kong">
-            </li>
-            <li class="puntos">
-                <img src="./logo-firulais-img/IMG-4002.PNG" alt="logo otros">
-            </li>
-        </ul>
+    <main class="maingrid">
+        <article>
+            <h1>Marcas Seleccionadas</h1>
+            <section class="imgaccesorios">
+                <img class="logoaccesorios" src="https://i.ytimg.com/vi/i1std5f1-qI/mqdefault.jpg" alt="perros">
+                <img class="logoaccesorios" src="https://i.pinimg.com/originals/6e/0a/6d/6e0a6d6f0799714653206b3eead45130.jpg" alt="animals">
+                <img class="logoaccesorios" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF3pE7VTAOoh4G8hYye-XjyWufOnkcJm12KXGj78HvHWUV5G4CoUXYE51O7BtHQXYJiUs&usqp=CAU" alt="gigwi">
+                <img class="logoaccesorios" src="https://www.pinclipart.com/picdir/middle/87-875476_kong-dog-toys-logo-clipart.png" alt="kong">
+                <img class="logoaccesorios" src="https://www.dogcenter.com.ar/wp-content/uploads/2020/10/LOGO-CAN-CAT.png" alt="can cat">
+            </section>
+            <section>
+                <h2 class="promo-cuchas">Promociones</h2>
+            </section>
+            <section>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item promociones">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button acorde " type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Ropa
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>Promocion Valida Llevando Dos Unidades o Mas</strong> Con la compra de dos unidades o mas de ropa a eleccion, tendras un 50% off en la prenda
+                                de menor valor. Llevan 4 prendas se aplica el 60% en el valor total de las dos prendas de menor valor.
+                                <STRONg>Valida Hasta 31/7/22 </STRONg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item promociones">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed acorde type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Juguetes/Correas/Collares/otros
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>Promocion Valida en Juguetes/Correas/Collares/otros .</strong> Con la compra de alguno de estos productos y pagando en efectivo tendras
+                                un 10% off. Sin limite de compra. <strong>Valida Hasta 31/7/22</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item promociones">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed acorde" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Moises y colchonetas
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>Promocion Valida en Moises y Colchonetas.</strong> Con la compra de un moises o colchoneta durante el mes de julio, pagando en efectivo tendras
+                                un 20% off. Sin limite de compras. <strong>Valida Hasta 31/7/22</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2 class="promo-cuchas">Cuchas</h2>
+                <img src="" alt="">
+                <img src="" alt="">
+            </section>
+        </article>
+
     </main>
-    <footer class="footer">
-        <ul class="redes">
+    <footer class="footergrid">
+        <a
+            href="https://www.google.com.ar/maps/place/Oro+%26+Avellaneda,+B6400+Trenque+Lauquen,+Provincia+de+Buenos+Aires/@-35.9753531,-62.7353661,17z/data=!4m13!1m7!3m6!1s0x95c17c00534857f9:0x4445132930b2f4f2!2sOro+%26+Avellaneda,+B6400+Trenque+Lauquen,+Provincia+de+Buenos+Aires!3b1!8m2!3d-35.9753531!4d-62.7353661!3m4!1s0x95c17c00534857f9:0x4445132930b2f4f2!8m2!3d-35.9753531!4d-62.7353661?hl=es">
+            <img class="ubicacion"
+                src="https://d500.epimg.net/cincodias/imagenes/2021/12/20/lifestyle/1640010686_094051_1640010787_noticia_normal.jpg"
+                alt="ubicacion">
+        </a>
+        <ul>
             <li>
-                <img class="instagram" src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c521.png" alt="logo instagram">
+                <img class="logoredes" src="./logo-redes/pngwing.com.png">
             </li>
             <li>
-                <img class="facebook" src="https://anthoncode.com/wp-content/uploads/2019/07/logotipo-facebook.png" alt="logo facebook">
+                <img class="logoredes" src="./logo-redes/facee.png" alt="logo facebook">
             </li>
             <li>
-                <img class="whatsupp" src="https://imagenpng.com/wp-content/uploads/2015/06/whatsapp-logo-png-i4.png" alt="logo whatsupp">
+                <img class="logoredes" src="./logo-redes/whats upp.png" alt="logo whatsupp">
+            </li>
+            <li>
+                <img class="logoredes" src="./logo-redes/google.png" alt="google">
             </li>
         </ul>
+        <div>
+            <h3>Contactanos</h3>
+            <h5>
+                Atencion telefonica al
+                +54 9 2392-504343|Via email a Firulais.tm@gmail.com de lunes a sabado de 8.30 a 13.00 por la mañama y
+                16:30 a 20:30 por la tarde. </h5>
+            <img class="tarjetas" src="./logo-redes/visa y master.png" alt="tarjetas">
+            <img class="tarjetas" src="./logo-redes/qr.png" alt="qr">
+
+        </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
 </body>

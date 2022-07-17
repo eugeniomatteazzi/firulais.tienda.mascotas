@@ -89,6 +89,107 @@
     max-height: 500px; }
   #alimentos
 .main .videos {
-    margin-left: 500px;
-    max-width: 700px;
-    max-height: 500px; }
+    max-width: 1000px;
+    max-height: 600px; }
+
+#accesorios
+.gridaccesorio {
+  display: grid;
+  grid-template-areas: "header header header" "main main main" "footer footer footer"; }
+
+.headergrid {
+  background: linear-gradient(90deg, rgba(0, 0, 36, 0.0116422) 8%, #d417dd 49%, rgba(209, 72, 197, 0.238533) 86%);
+  grid-area: header header header; }
+  .headergrid img {
+    max-width: 200px; }
+  .headergrid nav {
+    background: linear-gradient(90deg, rgba(0, 0, 36, 0.0116422) 8%, #d417dd 49%, rgba(209, 72, 197, 0.238533) 86%); }
+    .headergrid nav button {
+      background-color: darkmagenta;
+      color: white; }
+    .headergrid nav li {
+      color: black;
+      font-size: 5mm;
+      font-style: oblique;
+      font-family: helvetica; }
+      .headergrid nav li a {
+        color: black;
+        font-size: 5mm;
+        font-family: helvetica;
+        font-style: oblique; }
+
+.maingrid {
+  grid-area: main main main;
+  background: linear-gradient(90deg, rgba(0, 0, 36, 0.0116422) 8%, #d417dd 49%, rgba(209, 72, 197, 0.238533) 86%); }
+  .maingrid h1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 10mm;
+    font-family: georgia;
+    font-style: oblique;
+    background-color: darkmagenta;
+    color: white; }
+  .maingrid .imgaccesorios {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .maingrid .logoaccesorios {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 3mm;
+    margin-right: 4px; }
+  .maingrid .promo-cuchas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px;
+    margin-top: 7px;
+    font-size: 7mm;
+    font-family: georgia;
+    font-style: oblique;
+    background-color: darkmagenta;
+    color: white; }
+  .maingrid .promociones {
+    margin-bottom: 10px;
+    font-size: 5mm;
+    font-family: georgia;
+    background-color: blueviolet;
+    color: white; }
+  .maingrid .acorde {
+    background-color: darkviolet;
+    color: white;
+    font-size: 9mm;
+    font-family: georgia; }
+
+.footergrid {
+  grid-area: footer footer footer;
+  background: linear-gradient(90deg, rgba(0, 0, 36, 0.0116422) 8%, #d417dd 49%, rgba(209, 72, 197, 0.238533) 86%); }
+  .footergrid .ubicacion {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding: 2%;
+    max-width: 300px; }
+  .footergrid ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .footergrid li {
+    list-style: none;
+    color: black;
+    font-size: 5mm;
+    margin: auto;
+    text-decoration: none; }
+  .footergrid .logoredes {
+    max-width: 40px; }
+  .footergrid .tarjetas {
+    max-width: 150px; }
+  .footergrid h3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
