@@ -1,0 +1,45 @@
+#estetica
+.gridestetica{
+    @include grid
+}
+main{
+    .mainestetica{
+        @include main
+    }
+    h1{
+        @include titulo
+    }
+    h1{
+        margin: 0%;
+    }
+    .promocion{
+        @include promocion
+    }
+    .margin{
+     margin: 0%;
+    }
+.acordeo{
+    @include acordeon
+}
+.margenes{
+    background-color: palevioletred;
+    margin: 0%;
+    
+}
+.pelu{
+   margin: 0%;
+    background-color: palevioletred;
+    display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;   
+        }
+img{
+            max-width: 200px;
+            max-height: 100px;
+            border-radius: 3mm;
+            margin-right: 4px;
+        } 
+}
+   
+

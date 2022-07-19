@@ -1,1 +1,61 @@
-
+@mixin grid {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+}
+@mixin header {
+    background: linear-gradient(90deg, rgba(0,0,36,0.011642156862745057) 8%, rgba(212,23,221,1) 49%, rgba(209,72,197,0.23853291316526615) 86%);
+grid-area: header header header;
+}
+@mixin imglogo {
+    max-width: 200px;
+}
+@mixin nav {
+    background: linear-gradient(90deg, rgba(0,0,36,0.011642156862745057) 8%, rgba(212,23,221,1) 49%, rgba(209,72,197,0.23853291316526615) 86%);
+}
+@mixin buttonnav {
+    background-color: darkmagenta;
+    color: white;
+}
+@mixin menu {
+    color: black;
+    font-size: 5mm;
+    font-style: oblique;
+    font-family: helvetica;
+}
+@mixin link {
+    color: black;
+            font-size: 5mm;
+            font-family: helvetica;
+            font-style: oblique;
+}
+@mixin main {
+    grid-area: main main main;
+        background: linear-gradient(90deg, rgba(0, 0, 36, 0.0116422) 8%, #d417dd 49%, rgba(209, 72, 197, 0.238533) 86%); 
+}
+@mixin titulo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 10mm;
+    font-family: georgia;
+    font-style: oblique;
+    background-color: darkmagenta;
+    color: white;
+}
+@mixin promocion {
+    margin-bottom: 10px;
+    font-size: 5mm;
+    font-family: georgia;
+    background-color: blueviolet;
+    color: white;
+}
+@mixin acordeon {
+    background-color: darkviolet;
+    color: white;
+    font-size: 9mm;
+    font-family: georgia;
+}
