@@ -195,14 +195,10 @@
     justify-content: space-between; }
 
 #estetica
-.gridestetica {
-  display: grid;
-  grid-template-areas: "header header header" "main main main" "footer footer footer"; }
-
 main .mainestetica {
-  grid-area: main main main;
   background: linear-gradient(90deg, rgba(0, 0, 36, 0.0116422) 8%, #d417dd 49%, rgba(209, 72, 197, 0.238533) 86%); }
 
+#estetica
 main h1 {
   display: flex;
   flex-direction: row;
@@ -214,9 +210,11 @@ main h1 {
   background-color: darkmagenta;
   color: white; }
 
+#estetica
 main h1 {
   margin: 0%; }
 
+#estetica
 main .promocion {
   margin-bottom: 10px;
   font-size: 5mm;
@@ -224,19 +222,23 @@ main .promocion {
   background-color: blueviolet;
   color: white; }
 
+#estetica
 main .margin {
   margin: 0%; }
 
+#estetica
 main .acordeo {
   background-color: darkviolet;
   color: white;
   font-size: 9mm;
   font-family: georgia; }
 
+#estetica
 main .margenes {
   background-color: palevioletred;
   margin: 0%; }
 
+#estetica
 main .pelu {
   margin: 0%;
   background-color: palevioletred;
@@ -245,8 +247,150 @@ main .pelu {
   flex-wrap: wrap;
   justify-content: center; }
 
+#estetica
 main img {
   max-width: 200px;
   max-height: 100px;
   border-radius: 3mm;
   margin-right: 4px; }
+
+#contacto
+.grid {
+  height: 100vh;
+  margin: 0%;
+  display: grid;
+  grid-template-rows: 12% auto 25%;
+  grid-template-areas: "header " "main" "footer"; }
+
+.headercontacto {
+  grid-area: "header";
+  background: linear-gradient(90deg, rgba(0, 0, 36, 0.0116422) 8%, #d417dd 49%, rgba(209, 72, 197, 0.238533) 86%); }
+  .headercontacto .nav {
+    grid-area: "header";
+    background: linear-gradient(90deg, rgba(0, 0, 36, 0.0116422) 8%, #d417dd 49%, rgba(209, 72, 197, 0.238533) 86%);
+    margin-left: 25px;
+    margin-right: 15px; }
+    .headercontacto .nav .menunav {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; }
+    .headercontacto .nav li {
+      color: black;
+      font-size: 5mm;
+      font-style: oblique;
+      font-family: helvetica; }
+    .headercontacto .nav a {
+      color: black;
+      font-size: 5mm;
+      font-family: helvetica;
+      font-style: oblique; }
+    .headercontacto .nav button {
+      background-color: darkmagenta;
+      color: white; }
+    .headercontacto .nav .boton {
+      height: 30px;
+      width: 30px; }
+    .headercontacto .nav .boton1 {
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-right: auto;
+      height: 10vh;
+      padding: 4px 12px 4px 12px;
+      border: 1px 1px 1px 1px; }
+  .headercontacto .logofiru {
+    max-width: 200px; }
+
+.maingrid {
+  grid-area: "main";
+  background: linear-gradient(90deg, rgba(0, 0, 36, 0.0116422) 8%, #d417dd 49%, rgba(209, 72, 197, 0.238533) 86%); }
+  .maingrid .datos {
+    margin: auto;
+    margin-top: 4px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .maingrid .cuadro1 {
+    border-radius: 6mm;
+    border-style: double;
+    border: black;
+    margin-right: 2px; }
+  .maingrid .cuadro2 {
+    border-radius: 6mm;
+    border-style: double;
+    border: black;
+    margin-left: 2px; }
+  .maingrid .cuadro3 {
+    max-width: 400px;
+    border-radius: 6mm;
+    border-style: double;
+    border: black; }
+  .maingrid .comentario {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center; }
+    .maingrid .comentario p {
+      margin: auto;
+      font-size: 8mm;
+      font-family: georgia;
+      font-style: normal; }
+  .maingrid ul {
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .maingrid ul li {
+      list-style: none;
+      font-size: 5mm;
+      font-family: georgia;
+      font-style: normal;
+      color: black; }
+  .maingrid .enviar {
+    margin-top: 4px; }
+
+.gridfooter {
+  grid-area: "footer";
+  background: linear-gradient(90deg, rgba(0, 0, 36, 0.0116422) 8%, #d417dd 49%, rgba(209, 72, 197, 0.238533) 86%); }
+  .gridfooter .ubicacion {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding: 2%;
+    max-width: 300px; }
+  .gridfooter ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .gridfooter li {
+    list-style: none;
+    color: black;
+    font-size: 5mm;
+    margin: auto;
+    text-decoration: none; }
+  .gridfooter .logoredes {
+    max-width: 40px; }
+  .gridfooter .tarjetas {
+    max-width: 150px; }
+  .gridfooter h3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+
+@media only screen and (max-width: 768px) {
+  .grid {
+    height: 100vh;
+    margin: 0%;
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "header " "main" "footer"; } }
+
+@media only screen and (max-width: 400px) {
+  .grid {
+    height: 100vh;
+    margin: 0%;
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "header " "main" "footer"; } }

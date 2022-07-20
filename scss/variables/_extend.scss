@@ -32,7 +32,7 @@ grid-area: header header header;
             font-style: oblique;
 }
 @mixin main {
-    grid-area: main main main;
+
         background: linear-gradient(90deg, rgba(0, 0, 36, 0.0116422) 8%, #d417dd 49%, rgba(209, 72, 197, 0.238533) 86%); 
 }
 @mixin titulo {
@@ -58,4 +58,35 @@ grid-area: header header header;
     color: white;
     font-size: 9mm;
     font-family: georgia;
+}
+@mixin ubicacion {
+    display: flex;
+    flex-direction: row;
+margin: auto;
+    padding: 2%;
+    max-width: 300px;
+}
+@mixin ulfooter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+@mixin lifooter {
+    list-style: none;
+    color: black;
+    font-size: 5mm;
+    margin: auto;
+    text-decoration: none;
+}
+@mixin logoredes {
+    max-width: 40px;
+}
+@mixin tarjetas {
+    max-width: 150px;
+}
+@mixin titulocontacto {
+    display: flex;
+            flex-direction: row;
+            justify-content: space-between;
 }
