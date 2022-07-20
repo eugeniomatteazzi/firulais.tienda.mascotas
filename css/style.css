@@ -254,8 +254,7 @@ main img {
   border-radius: 3mm;
   margin-right: 4px; }
 
-#contacto
-.grid {
+#contacto .grid {
   height: 100vh;
   margin: 0%;
   display: grid;
@@ -266,14 +265,16 @@ main img {
   grid-area: "header";
   background: linear-gradient(90deg, rgba(0, 0, 36, 0.0116422) 8%, #d417dd 49%, rgba(209, 72, 197, 0.238533) 86%); }
   .headercontacto .nav {
-    grid-area: "header";
     background: linear-gradient(90deg, rgba(0, 0, 36, 0.0116422) 8%, #d417dd 49%, rgba(209, 72, 197, 0.238533) 86%);
     margin-left: 25px;
     margin-right: 15px; }
     .headercontacto .nav .menunav {
+      grid-area: "header";
       display: flex;
       flex-direction: row;
       flex-wrap: wrap; }
+    .headercontacto .nav .buscador {
+      margin-left: 628px; }
     .headercontacto .nav li {
       color: black;
       font-size: 5mm;
@@ -303,52 +304,70 @@ main img {
 .maingrid {
   grid-area: "main";
   background: linear-gradient(90deg, rgba(0, 0, 36, 0.0116422) 8%, #d417dd 49%, rgba(209, 72, 197, 0.238533) 86%); }
-  .maingrid .datos {
+  .maingrid h1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 10mm;
+    font-family: georgia;
+    font-style: oblique;
+    background-color: darkmagenta;
+    color: white; }
+
+.datos {
+  margin-top: 4px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.cuadro1 {
+  margin-bottom: 3px;
+  border-radius: 6mm;
+  border-style: double;
+  border: black;
+  margin-right: 2px; }
+
+.cuadro2 {
+  margin-top: 3px;
+  border-radius: 6mm;
+  border-style: double;
+  border: black;
+  margin-left: 2px; }
+
+.cuadro3 {
+  max-width: 400px;
+  border-radius: 6mm;
+  border-style: double;
+  border: black; }
+
+.comentario {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center; }
+  .comentario p {
     margin: auto;
-    margin-top: 4px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center; }
-  .maingrid .cuadro1 {
-    border-radius: 6mm;
-    border-style: double;
-    border: black;
-    margin-right: 2px; }
-  .maingrid .cuadro2 {
-    border-radius: 6mm;
-    border-style: double;
-    border: black;
-    margin-left: 2px; }
-  .maingrid .cuadro3 {
-    max-width: 400px;
-    border-radius: 6mm;
-    border-style: double;
-    border: black; }
-  .maingrid .comentario {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    align-items: center; }
-    .maingrid .comentario p {
-      margin: auto;
-      font-size: 8mm;
-      font-family: georgia;
-      font-style: normal; }
-  .maingrid ul {
-    margin: 0%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around; }
-    .maingrid ul li {
-      list-style: none;
-      font-size: 5mm;
-      font-family: georgia;
-      font-style: normal;
-      color: black; }
-  .maingrid .enviar {
-    margin-top: 4px; }
+    font-size: 8mm;
+    font-family: georgia;
+    font-style: normal; }
+
+ul {
+  margin: 0%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  ul li {
+    list-style: none;
+    font-size: 5mm;
+    font-family: georgia;
+    font-style: normal;
+    color: black; }
+
+.enviar {
+  margin-top: 4px; }
 
 .gridfooter {
   grid-area: "footer";
@@ -379,6 +398,14 @@ main img {
     flex-direction: row;
     justify-content: space-between; }
 
+@media only screen and (max-width: 1440px) {
+  .grid {
+    height: 100vh;
+    margin: 0%;
+    display: grid;
+    grid-template-rows: 12% auto 25%;
+    grid-template-areas: "header " "main" "footer"; } }
+
 @media only screen and (max-width: 768px) {
   .grid {
     height: 100vh;
@@ -387,10 +414,10 @@ main img {
     grid-template-rows: repeat(4, auto);
     grid-template-areas: "header " "main" "footer"; } }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 320px) {
   .grid {
     height: 100vh;
     margin: 0%;
     display: grid;
-    grid-template-rows: repeat(4, auto);
+    grid-template-rows: repeat(5, auto);
     grid-template-areas: "header " "main" "footer"; } }

@@ -5,6 +5,7 @@
     "main main main"
     "footer footer footer";
 }
+// mixin header
 @mixin header {
     background: linear-gradient(90deg, rgba(0,0,36,0.011642156862745057) 8%, rgba(212,23,221,1) 49%, rgba(209,72,197,0.23853291316526615) 86%);
 grid-area: header header header;
@@ -31,6 +32,7 @@ grid-area: header header header;
             font-family: helvetica;
             font-style: oblique;
 }
+// mixin main
 @mixin main {
 
         background: linear-gradient(90deg, rgba(0, 0, 36, 0.0116422) 8%, #d417dd 49%, rgba(209, 72, 197, 0.238533) 86%); 
@@ -59,6 +61,7 @@ grid-area: header header header;
     font-size: 9mm;
     font-family: georgia;
 }
+// mixin footer
 @mixin ubicacion {
     display: flex;
     flex-direction: row;
@@ -90,3 +93,5 @@ margin: auto;
             flex-direction: row;
             justify-content: space-between;
 }
+
+    
