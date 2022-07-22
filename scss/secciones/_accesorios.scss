@@ -1,47 +1,45 @@
-#accesorios
-.gridaccesorio{
-    display: grid;
-    grid-template-areas: 
-    "header header header"
-    "main main main"
-    "footer footer footer"; }
-    .headergrid{
-        background: linear-gradient(90deg, rgba(0,0,36,0.011642156862745057) 8%, rgba(212,23,221,1) 49%, rgba(209,72,197,0.23853291316526615) 86%);
-grid-area: header header header;
-    
+#accesorios //  .headergrid {
 
 
 
 
-        img{
-        max-width: 200px;
+
+
+// //     img {
+// //         max-width: 200px;
+// //     }
+
+// //     nav {
+// //         background: linear-gradient(90deg, rgba(0, 0, 36, 0.011642156862745057) 8%, rgba(212, 23, 221, 1) 49%, rgba(209, 72, 197, 0.23853291316526615) 86%);
+
+// //         button {
+// //             background-color: darkmagenta;
+// //             color: white;
+// //         }
+
+// //         li {
+// //             color: black;
+// //             font-size: 5mm;
+// //             font-style: oblique;
+// //             font-family: helvetica;
+
+// //             a {
+// //                 color: black;
+// //                 font-size: 5mm;
+// //                 font-family: helvetica;
+// //                 font-style: oblique;
+// //             }
+// //         }
+// //     }
+// // }
+main {
+
+
+    .maingrid {
+        @include main
     }
-    nav{
-        background: linear-gradient(90deg, rgba(0,0,36,0.011642156862745057) 8%, rgba(212,23,221,1) 49%, rgba(209,72,197,0.23853291316526615) 86%);
-        
-        button{
-            background-color: darkmagenta;
-           color: white;
-        } 
-        
-        li{
-        color: black;
-        font-size: 5mm;
-        font-style: oblique;
-        font-family: helvetica;
-        a{
-            color: black;
-            font-size: 5mm;
-            font-family: helvetica;
-            font-style: oblique;
-        }
-      }
-    }
-    }
-    .maingrid{
-        grid-area: main main main;
-        background: linear-gradient(90deg, rgba(0, 0, 36, 0.0116422) 8%, #d417dd 49%, rgba(209, 72, 197, 0.238533) 86%); 
-    h1{
+
+    h1 {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -52,20 +50,22 @@ grid-area: header header header;
         background-color: darkmagenta;
         color: white;
     }
-    
-        .imgaccesorios{
+
+    .imgaccesorios {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;   
+        justify-content: center;
     }
-    .logoaccesorios{
+
+    .logoaccesorios {
         max-width: 100px;
         max-height: 100px;
         border-radius: 3mm;
-        margin-right: 4px; 
+        margin-right: 4px;
     }
-    .promo-cuchas{
+
+    .promo-cuchas {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -78,55 +78,80 @@ grid-area: header header header;
         background-color: darkmagenta;
         color: white;
     }
-    .promociones{
-        margin-bottom: 10px;
+
+    .promociones {
+       
         font-size: 5mm;
         font-family: georgia;
         background-color: blueviolet;
         color: white;
     }
-    .acorde{
+
+    .acorde {
         background-color: darkviolet;
         color: white;
         font-size: 9mm;
         font-family: georgia;
     }
-    }
-    .footergrid{
-        grid-area: footer footer footer;
-    
-        background: linear-gradient(90deg, rgba(0, 0, 36, 0.0116422) 8%, #d417dd 49%, rgba(209, 72, 197, 0.238533) 86%); 
-        .ubicacion{
-            display: flex;
-            flex-direction: row;
+}
+
+.footergrid {
+
+
+
+    background: linear-gradient(90deg, rgba(0, 0, 36, 0.0116422) 8%, #d417dd 49%, rgba(209, 72, 197, 0.238533) 86%);
+
+    .ubicacion {
+        display: flex;
+        flex-direction: row;
         margin: auto;
-            padding: 2%;
-            max-width: 300px;
-        }
-        ul{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        li{
-            list-style: none;
-            color: black;
-            font-size: 5mm;
-            margin: auto;
-            text-decoration: none;
-        }
-        .logoredes{
-            max-width: 40px;
-        }
-        
-        .tarjetas{
-            max-width: 150px;
-        }
-        h3{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-        }
-        }
-        
+        padding: 2%;
+        max-width: 300px;
+    }
+
+    ul {
+        padding: 0%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    li {
+       
+        list-style: none;
+        color: black;
+        font-size: 5mm;
+        text-decoration: none;
+    }
+
+    .logoredes {
+        max-width: 40px;
+        animation-name: redes;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    }
+
+    .tarjetas {
+        max-width: 150px;
+    }
+
+    h3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+       
+    }
+}
+@keyframes redes{
+    0%{
+        width: 20px;
+    }
+    
+    50%{
+      width: 30px;
+    }
+    100%{
+        width: 40px;
+    }
+}

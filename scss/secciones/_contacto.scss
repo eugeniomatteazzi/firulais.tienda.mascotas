@@ -24,10 +24,13 @@
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
+          
         }
 
         .buscador {
-            margin-left: 628px;
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
         }
 
         li {
@@ -98,27 +101,30 @@
 
 }
 
-.cuadro1 {
-    margin-bottom: 3px;
-    border-radius: 6mm;
+.cuadro1 { border-radius: 10px;
+    background-color: aqua;
     border-style: double;
-    border: black;
-    margin-right: 2px;
+    border-color: black;
+    margin-left: 2px;
+  
+    
 }
 
 .cuadro2 {
-    margin-top: 3px;
-    border-radius: 6mm;
+   
+    border-radius: 10px;
+    background-color: aqua;
     border-style: double;
-    border: black;
+    border-color: black;
     margin-left: 2px;
 }
 
 .cuadro3 {
-    max-width: 400px;
-    border-radius: 6mm;
+    border-radius: 10px;
+    background-color: aqua;
     border-style: double;
-    border: black;
+    border-color: black;
+    margin-left: 2px;
 }
 
 .comentario {
@@ -132,7 +138,9 @@
         font-size: 8mm;
         font-family: georgia;
         font-style: normal;
-
+        color: black;
+        
+        
     }
 
 
@@ -145,17 +153,25 @@ ul {
     flex-wrap: wrap;
     justify-content: space-around;
 
-    li {
+    .direcciones {
         list-style: none;
         font-size: 5mm;
         font-family: georgia;
         font-style: normal;
-        color: black;
+        color: white;
+       align-items: center;
+    background-color: mediumvioletred;
+        
     }
 }
 
 .enviar {
     margin-top: 4px;
+    margin-bottom: 30px;
+    background-color: coral;
+    border-radius: 10px;
+    border-color: white;
+    width: 60px;
 }
 
 
@@ -176,7 +192,12 @@ ul {
     }
 
     .logoredes {
-        @include logoredes
+        max-width: 40px;
+        animation-name: redes;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    }
+        
     }
 
     .tarjetas {
@@ -186,6 +207,18 @@ ul {
     h3 {
         @include titulocontacto
     }
+
+@keyframes redes{
+    0%{
+        width: 20px;
+    }
+    
+    50%{
+      width: 30px;
+    }
+    100%{
+        width: 40px;
+    }
 }
 
 
@@ -194,7 +227,7 @@ ul {
         height: 100vh;
         margin: 0%;
         display: grid;
-        grid-template-rows: 12% auto 25%;
+        grid-template-rows: repeat(4, auto);
         grid-template-areas:
             "header "
             "main"
@@ -221,7 +254,7 @@ ul {
             height: 100vh;
             margin: 0%;
             display: grid;
-            grid-template-rows: repeat(5, auto);
+            grid-template-rows: repeat(4, auto);
             grid-template-areas:
                 "header "
                 "main"
