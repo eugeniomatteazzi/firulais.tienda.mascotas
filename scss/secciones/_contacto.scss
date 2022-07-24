@@ -102,7 +102,7 @@
 }
 
 .cuadro1 { border-radius: 10px;
-    background-color: aqua;
+    background-color: beige;
     border-style: double;
     border-color: black;
     margin-left: 2px;
@@ -113,7 +113,7 @@
 .cuadro2 {
    
     border-radius: 10px;
-    background-color: aqua;
+    background-color: beige;
     border-style: double;
     border-color: black;
     margin-left: 2px;
@@ -121,7 +121,7 @@
 
 .cuadro3 {
     border-radius: 10px;
-    background-color: aqua;
+    background-color: beige;
     border-style: double;
     border-color: black;
     margin-left: 2px;
@@ -135,10 +135,10 @@
 
     p {
         margin: auto;
-        font-size: 8mm;
+        font-size: 6mm;
         font-family: georgia;
         font-style: normal;
-        color: black;
+        color: whitesmoke;
         
         
     }
@@ -162,6 +162,15 @@ ul {
        align-items: center;
     background-color: mediumvioletred;
         
+    }
+    .telefono{
+        max-width: 40px;
+    }
+    .direccion{
+        max-width: 50px;
+    }
+    .mail{
+        max-width: 55px;
     }
 }
 

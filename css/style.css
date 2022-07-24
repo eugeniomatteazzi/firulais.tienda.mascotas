@@ -342,21 +342,21 @@ main img {
 
 .cuadro1 {
   border-radius: 10px;
-  background-color: aqua;
+  background-color: beige;
   border-style: double;
   border-color: black;
   margin-left: 2px; }
 
 .cuadro2 {
   border-radius: 10px;
-  background-color: aqua;
+  background-color: beige;
   border-style: double;
   border-color: black;
   margin-left: 2px; }
 
 .cuadro3 {
   border-radius: 10px;
-  background-color: aqua;
+  background-color: beige;
   border-style: double;
   border-color: black;
   margin-left: 2px; }
@@ -368,10 +368,10 @@ main img {
   align-items: center; }
   .comentario p {
     margin: auto;
-    font-size: 8mm;
+    font-size: 6mm;
     font-family: georgia;
     font-style: normal;
-    color: black; }
+    color: whitesmoke; }
 
 ul {
   margin: 0%;
@@ -387,6 +387,12 @@ ul {
     color: white;
     align-items: center;
     background-color: mediumvioletred; }
+  ul .telefono {
+    max-width: 40px; }
+  ul .direccion {
+    max-width: 50px; }
+  ul .mail {
+    max-width: 55px; }
 
 .enviar {
   margin-top: 4px;
