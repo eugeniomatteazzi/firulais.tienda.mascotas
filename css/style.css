@@ -46,6 +46,12 @@
   min-height: auto;
   min-width: auto;
   background: linear-gradient(90deg, rgba(0, 0, 36, 0.0116422) 8%, #d417dd 49%, rgba(209, 72, 197, 0.238533) 86%); }
+  #index .main .indexservicios {
+    margin: auto;
+    max-width: 1280px;
+    max-height: 400px; }
+  #index .main .serviciosimg {
+    max-width: 800px; }
   #index .main p {
     margin: 0%;
     padding: 5%;
